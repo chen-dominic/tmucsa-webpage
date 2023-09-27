@@ -2,7 +2,10 @@
     --color-primary: #111929;
     --color-secondary: #023169ff;
     --def-text: #FFFFFF;
+    --opp-text: #000000;
     --color-text: #ba925e;
+    --color-light: #808b9e;
+    --color-dark: #181c24;
 }
 
 body{
@@ -83,7 +86,7 @@ body{
 }
 
 .ban-con{
-    width: 100%;
+    width: 100vw;
     height: 500px;
     display: flex;
     position: relative;
@@ -114,8 +117,51 @@ body{
     filter: brightness(0.6);
 }
 
+.block{
+    padding: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+}
+
+.block .info-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b1{
+    background-color: var(--color-dark);
+}
+
+.b1 .info-block .left-side p{
+    color: var(--def-text);
+    text-align: left;
+}
+
+.b1 .info-block .right-side .img-con img{
+    height: 400px;
+    width: auto;
+}
+
+.b2{
+    background-color: var(--color-light);
+}
+
+.b2 .info-block .right-side p{
+    float: right;
+    color: var(--opp-text);
+    text-align: right;
+}
+
+.b2 .info-block .left-side .img-con img{
+    height: 400px;
+    width: auto;
+}
+
 footer{
-    padding-top: 100vw;
+    padding-top: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
