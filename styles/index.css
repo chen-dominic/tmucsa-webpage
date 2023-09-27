@@ -1,0 +1,119 @@
+:root{
+    --color-primary: #111929;
+    --color-secondary: #023169ff;
+    --def-text: #FFFFFF;
+    --color-text: #ba925e;
+}
+
+body{
+    background-color: var(--color-primary);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar{
+    width: 100vw;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .logo-con{
+    width: 90px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+}
+
+.nav-bar .welcome-msg{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: var(--def-text);
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.nav-bar .logo-con img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.nav-bar .nav-links-con{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-links-con .nav-link{
+    padding: 3rem;
+    text-decoration: none;
+}
+
+.nav-links-con .nav-link p{
+    color: var(--def-text);
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-links-con .nav-link .cur-page{
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.nav-links-con .nav-link p:hover{
+    color: var(--color-text);
+    filter: opacity(0.8);
+}
+
+.ban-con{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ban-con .filter{
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    overflow: hidden;
+}
+
+.ban-con .img-con .banner{
+    position: relative;
+    z-index: -1;
+}
+.ban-con .img-con .banner img{
+    height: 700px;
+    width: auto;
+    padding-top: 8rem;
+    filter: grayscale(0.2);
+    filter: opacity(0.9);
+    filter: brightness(0.6);
+}
+
+footer{
+    padding-top: 100vw;
+}
