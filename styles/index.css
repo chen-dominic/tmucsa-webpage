@@ -10,11 +10,12 @@ body{
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .nav-bar{
     width: 100vw;
-    height: 100px;
+    height: 80px;
     overflow: hidden;
     z-index: 100;
     position: sticky;
@@ -92,7 +93,7 @@ body{
 }
 
 .ban-con .filter{
-    height: 700px;
+    height: 800px;
     position: absolute;
     top: 0;
     left: 0;
@@ -105,7 +106,7 @@ body{
     z-index: -1;
 }
 .ban-con .img-con .banner img{
-    height: 700px;
+    height: 1000px;
     width: auto;
     padding-top: 8rem;
     filter: grayscale(0.2);
