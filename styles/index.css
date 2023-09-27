@@ -6,19 +6,21 @@
     --color-text: #ba925e;
     --color-light: #808b9e;
     --color-dark: #181c24;
+    --screen-width: 1920px;
 }
 
 body{
     background-color: var(--color-primary);
     font-family: 'Lato', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow-x: hidden;
+    max-width: var(--screen-width);
 }
 
 .nav-bar{
-    width: 100vw;
-    height: 80px;
+    width: var(--screen-width);
+    height: 60px;
     overflow: hidden;
     z-index: 100;
     position: sticky;
@@ -26,27 +28,30 @@ body{
     background-color: var(--color-secondary);
     display: flex;
     justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+    opacity: 0.8;
 }
 
 .nav-bar .logo-con{
-    width: 90px;
+    width: 60px;
     height: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 3vw;
+    padding-left: 3rem;
     transition: all .3s ease-in-out;
 }
 
 .nav-bar .logo-con:hover{
-    transform: scale(1.1);
+    filter: brightness(0.8);
 }
 
 .nav-bar .welcome-msg{
     font-family: 'Sedgwick Ave Display', cursive;
     color: var(--def-text);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding-bottom: 1rem;
     display: flex;
     justify-content: center;
@@ -98,35 +103,17 @@ body{
 }
 
 .ban-con{
-    width: 100vw;
+    width: var(--screen-width);
     height: 500px;
     display: flex;
-    position: relative;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
 }
 
-.ban-con .filter{
-    height: 800px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500px;
-    overflow: hidden;
-}
-
-.ban-con .img-con .banner{
-    position: relative;
-    z-index: -1;
-}
 .ban-con .img-con .banner img{
-    height: 1000px;
+    height: 900px;
     width: auto;
     padding-top: 8rem;
-    filter: grayscale(0.2);
-    filter: opacity(0.9);
-    filter: brightness(0.6);
 }
 
 .block{
