@@ -10,7 +10,6 @@ body{
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .nav-bar{
@@ -116,4 +115,8 @@ body{
 
 footer{
     padding-top: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
 }
