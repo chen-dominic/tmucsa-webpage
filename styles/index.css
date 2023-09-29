@@ -1,6 +1,6 @@
 :root{
-    --color-primary: #111929;
-    --color-secondary: #023169ff;
+    --color-primary: #000001;
+    --color-secondary: rgb(1, 22, 47);
     --def-text: #FFFFFF;
     --opp-text: #000000;
     --color-text: #ba925e;
@@ -34,7 +34,7 @@ body{
 }
 
 .nav-bar .logo-con{
-    width: 65px;
+    width: 60px;
     height: auto;
     overflow: hidden;
     display: flex;
